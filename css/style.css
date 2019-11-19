@@ -2,3 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
+
+body button {
+  position: fixed;
+  z-index: 9; }
+  body button:nth-child(3) {
+    left: 150px; }
+
+body ul {
+  position: relative;
+  top: 30px; }

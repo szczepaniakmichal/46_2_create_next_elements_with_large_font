@@ -3,3 +3,18 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body{
+  button {
+    position: fixed;
+    z-index: 9;
+    &:nth-child(3) {
+      left: 150px;
+    }
+  }
+
+  ul {
+    position: relative;
+    top: 30px;
+  }
+}
