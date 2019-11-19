@@ -29,14 +29,16 @@ const createElements = () => {
 const clearList = () => {
     count = 0;
     fontSize = 10;
-    while (listOfElements.firstChild) {
-        listOfElements.firstChild.remove();
-    }
+    // while (listOfElements.firstChild) {
+    //     listOfElements.firstChild.remove();
+    // }
+// next way to remove element
+    [...listOfElements.childNodes].forEach(el => el.remove());
 };
 
 const init = () => {
     const btn = document.createElement('button');
-        btn.textContent = 'Stwórz 4 elementów';
+        btn.textContent = 'Stwórz 5 elementów';
         btn.addEventListener('click', createElements);
     const btnClear = document.createElement('button');
         btnClear.textContent = 'wyczyść listę';
